@@ -50,7 +50,7 @@ class Blockchain
      let nonce = 0;
      let hash = this.hashBlock(previousBlockHash,currentBlockData,nonce);
 
-     while (hash.substring(0,5)!=='00000') 
+     while (hash.substring(0,3)!=='000') 
      {
        console.log(hash.substring(0,1)!=='0');  
        nonce++;
